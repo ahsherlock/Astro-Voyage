@@ -43,6 +43,8 @@ public class Movement : MonoBehaviour
     }
     void ApplyRotation(float rotationThisFrame)
     {
+        playerRocket.freezeRotation = true;
         transform.Rotate(Vector3.forward * rotationThisFrame * Time.deltaTime);
+        playerRocket.freezeRotation = false;
     }
 }
