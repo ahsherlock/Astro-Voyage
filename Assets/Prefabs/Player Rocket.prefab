@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 877946879}
   - component: {fileID: 877946874}
   - component: {fileID: 8535538161004484632}
+  - component: {fileID: 1925943529}
+  - component: {fileID: 9025533806720727680}
   m_Layer: 0
   m_Name: Player Rocket
   m_TagString: Untagged
@@ -110,12 +112,12 @@ Rigidbody:
   m_GameObject: {fileID: 1748858435107465109}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.25
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!114 &877946874
 MonoBehaviour:
@@ -131,6 +133,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainThrust: 1000
   rotationThrust: 100
+  engineThrust: {fileID: 8300000, guid: 87272819861d742ddb4917ad5e67f457, type: 3}
 --- !u!82 &8535538161004484632
 AudioSource:
   m_ObjectHideFlags: 0
@@ -141,8 +144,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 87272819861d742ddb4917ad5e67f457, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -227,3 +230,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1925943529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748858435107465109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 430b700af028a4a30905ba83d6bde466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelLoadDelay: 2
+  success: {fileID: 8300000, guid: 66d0782babee44d63acccb09c0aed3ad, type: 3}
+  crash: {fileID: 8300000, guid: 1b709f6464e8f40b3bf13ce4fcb76eaf, type: 3}
+--- !u!114 &9025533806720727680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748858435107465109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 430b700af028a4a30905ba83d6bde466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelLoadDelay: 2
+  success: {fileID: 0}
+  crash: {fileID: 0}
