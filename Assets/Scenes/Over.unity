@@ -366,23 +366,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1925943521 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1748858435107465109, guid: 317022841b39b4ba28302a495a070390, type: 3}
-  m_PrefabInstance: {fileID: 1985270929}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1925943529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1925943521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 430b700af028a4a30905ba83d6bde466, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1985270929
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -390,14 +373,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 877946879, guid: 317022841b39b4ba28302a495a070390, type: 3}
-      propertyPath: m_Drag
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 877946879, guid: 317022841b39b4ba28302a495a070390, type: 3}
-      propertyPath: m_Constraints
-      value: 56
-      objectReference: {fileID: 0}
     - target: {fileID: 1748858435107465109, guid: 317022841b39b4ba28302a495a070390, type: 3}
       propertyPath: m_Name
       value: Player Rocket
@@ -444,10 +419,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4265785197239627325, guid: 317022841b39b4ba28302a495a070390, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8535538161004484632, guid: 317022841b39b4ba28302a495a070390, type: 3}
-      propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
